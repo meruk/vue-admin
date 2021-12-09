@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view name="mainLayout" key="mainLayoutKey"></router-view>
+    <router-view name="loginLayout" key="loginKey"/>
   </div>
 </template>
-
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+    };
+  },
+};
+</script>
+<style lang="css" src="@/assets/styles/bootstrap.min.css" />
+<style lang="css" src="@/assets/styles/style.css" />
+<!--<style lang="css" src="@/assets/styles/responsive.css" />-->
+<!--<style lang="css" src="@/assets/styles/bootstrap-select.css" />-->
+<!--<style lang="css" src="@/assets/styles/perfect-scrollbar.css" />-->
+<!--<style lang="css" src="@/assets/styles/custom.css" />-->
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
